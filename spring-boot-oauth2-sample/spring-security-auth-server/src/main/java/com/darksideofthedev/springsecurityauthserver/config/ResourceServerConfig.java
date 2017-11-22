@@ -36,6 +36,6 @@ public class ResourceServerConfig extends WebSecurityConfigurerAdapter {
                 .inMemoryAuthentication()
                 .withUser("dark")
                 .password("side")
-                .roles("ROLE_ADMIN");
+                .roles("ADMIN");
     }
 }

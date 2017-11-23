@@ -24,13 +24,13 @@ public class ResourceServerApplication {
 
 	private String message = "Hello World!";
 
-	@GetMapping
+	@GetMapping("/")
 	public Map<String, String> home() {
 
 		return Collections.singletonMap("message", message);
 	}
 
-	@PostMapping
+	@PostMapping("/")
 	public void updateMessage(@RequestBody String message) {
 
 		this.message = message;
